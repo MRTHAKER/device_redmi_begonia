@@ -34,6 +34,10 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
 PRODUCT_NAME := omni_begonia
