@@ -51,5 +51,11 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.mt6785.rc \
+    fstab.mt6785 \
+    init.mtk.rc
+
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)

@@ -1,0 +1,3 @@
+on init
+    mount none /system/etc/fstab.mt6785 /vendor/etc/fstab.mt6785 bind
+    mount none /system/etc/init.mt6785.rc /vendor/etc/init/hw/init.mt6785.rc bind
